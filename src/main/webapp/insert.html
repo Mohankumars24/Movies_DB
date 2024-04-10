@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Movie</title>
+</head>
+<body>
+	<div align="center">
+		<form action="insert-movie" method="post" enctype="multipart/form-data">
+		<h1>Movie Collection site</h1>
+		
+			Movie Name:<input type="text" name="name" placeholder="Enter Movie Name" required><br><br> 
+		    
+		    Movie Language: 
+			<select name="language" id="" required>
+				<option disabled selected value=>Select a Language</option>
+				<option>Kannada</option>
+				<option>English</option>
+				<option>Hindi</option>
+			</select><br><br>
+		    
+		    Rating:<input type="text" name="rating" placeholder="Enter Rating" required><br><br>
+		     
+            Image: <input type="file" name="picture" required><br><br>
+			
+			Genre:
+			<select name="genre" id="" required>
+				<option disabled selected value=>Select a Genre</option>
+				<option>Horror</option>
+				<option>Comedy</option>
+				<option>Action</option>
+			</select><br><br>
+			<button type="reset"> Reset</button>
+			<a><button>Add</button></a>
+		</form>
+	</div>
+</body>
+</html>
